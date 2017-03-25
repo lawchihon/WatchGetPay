@@ -38,6 +38,9 @@ class LandingViewController: UIViewController {
             if autoRepeatTextField.text != nil || autoRepeatTextField.text != "" {
                 detailViewController.autoRepeat = Int(autoRepeatTextField.text!)!
             }
+            else {
+                detailViewController.autoRepeat = 0
+            }
         }
     }
 }

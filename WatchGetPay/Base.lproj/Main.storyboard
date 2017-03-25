@@ -168,6 +168,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="9FD-mX-xty"/>
+                                    <constraint firstAttribute="width" constant="109" id="DhP-5e-GKj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="24"/>
                                 <state key="normal" title="Watch">
@@ -203,9 +204,12 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AVz-1Z-BUo" firstAttribute="top" secondItem="tP0-er-IYd" secondAttribute="bottom" id="gsr-0S-wbA"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Repeat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-38-uYu">
-                                <rect key="frame" x="24" y="330" width="327" height="52"/>
+                                <rect key="frame" x="120.5" y="330" width="134.5" height="52"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -224,15 +228,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZZ4-yT-nCB" firstAttribute="centerX" secondItem="fNb-Pa-152" secondAttribute="centerX" id="1Mm-sU-iq8"/>
-                            <constraint firstItem="AhS-38-uYu" firstAttribute="leading" secondItem="cbj-9b-nLU" secondAttribute="leading" constant="24" id="4Zj-N5-qJk"/>
-                            <constraint firstAttribute="trailing" secondItem="AhS-38-uYu" secondAttribute="trailing" constant="24" id="8up-nK-RU5"/>
                             <constraint firstItem="AhS-38-uYu" firstAttribute="top" secondItem="AVz-1Z-BUo" secondAttribute="bottom" constant="70" id="Hic-0A-DJS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fNb-Pa-152" secondAttribute="trailing" constant="8" id="KCv-gE-ZIk"/>
-                            <constraint firstItem="mCq-FV-c1g" firstAttribute="leading" secondItem="cbj-9b-nLU" secondAttribute="leadingMargin" constant="117" id="cZN-4E-gGV"/>
                             <constraint firstItem="fNb-Pa-152" firstAttribute="leading" secondItem="cbj-9b-nLU" secondAttribute="leadingMargin" constant="8" id="cce-Ps-DSR"/>
                             <constraint firstItem="mCq-FV-c1g" firstAttribute="centerX" secondItem="fNb-Pa-152" secondAttribute="centerX" id="h7q-A1-h3O"/>
                             <constraint firstItem="AhS-38-uYu" firstAttribute="centerX" secondItem="fNb-Pa-152" secondAttribute="centerX" id="j2B-KY-Vj2"/>
-                            <constraint firstItem="fNb-Pa-152" firstAttribute="top" secondItem="Gu2-YZ-G0P" secondAttribute="bottom" constant="80" id="lrn-rr-58W"/>
+                            <constraint firstItem="fNb-Pa-152" firstAttribute="top" relation="lessThanOrEqual" secondItem="Gu2-YZ-G0P" secondAttribute="bottom" constant="80" id="lrn-rr-58W"/>
                             <constraint firstItem="mCq-FV-c1g" firstAttribute="top" secondItem="ZZ4-yT-nCB" secondAttribute="bottom" constant="90" id="oBp-dD-UTM"/>
                             <constraint firstItem="ZZ4-yT-nCB" firstAttribute="top" secondItem="AhS-38-uYu" secondAttribute="bottom" constant="20" id="r8D-EA-IUE"/>
                             <constraint firstItem="qB9-Sy-8wn" firstAttribute="top" secondItem="mCq-FV-c1g" secondAttribute="bottom" constant="80" id="sZT-xy-a3x"/>
@@ -258,7 +259,29 @@
                     <view key="view" contentMode="scaleToFill" id="9R5-qo-38l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-EY-u25">
+                                <rect key="frame" x="133" y="473" width="109" height="55"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="O8q-nG-Z4J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="24"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignUpButton:" destination="Hqo-z9-gDj" eventType="touchUpInside" id="LbU-oC-Kvd"/>
+                                    <action selector="onStopButton:" destination="Ndc-ej-971" eventType="touchUpInside" id="GQd-eZ-bOW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jT2-Ti-Eqc" firstAttribute="top" secondItem="ucN-EY-u25" secondAttribute="bottom" constant="139" id="6an-Ry-Wtd"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ucN-EY-u25" secondAttribute="trailing" constant="133" id="im7-zg-6hV"/>
+                            <constraint firstItem="ucN-EY-u25" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9R5-qo-38l" secondAttribute="leading" constant="133" id="xsA-qB-ZQV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxL-H1-VrI" userLabel="First Responder" sceneMemberID="firstResponder"/>

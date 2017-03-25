@@ -40,6 +40,10 @@ class VideoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func onStopButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
 }
 
 extension VideoViewController: GADRewardBasedVideoAdDelegate {
