@@ -11,6 +11,7 @@
 		673236DA1E85323C00BE0B1C /* LoadingProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673236D91E85323C00BE0B1C /* LoadingProgress.swift */; };
 		673236DC1E853C2A00BE0B1C /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673236DB1E853C2A00BE0B1C /* AuthorizeViewController.swift */; };
 		673236DF1E85431200BE0B1C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673236DE1E85431200BE0B1C /* AdSupport.framework */; };
+		673236E11E85552500BE0B1C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673236E01E85552500BE0B1C /* VideoViewController.swift */; };
 		673EB76C1E84DA6800C907B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673EB76B1E84DA6800C907B2 /* AppDelegate.swift */; };
 		673EB76E1E84DA6800C907B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673EB76D1E84DA6800C907B2 /* ViewController.swift */; };
 		673EB7711E84DA6800C907B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673EB76F1E84DA6800C907B2 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		673236D91E85323C00BE0B1C /* LoadingProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingProgress.swift; sourceTree = "<group>"; };
 		673236DB1E853C2A00BE0B1C /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		673236DE1E85431200BE0B1C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		673236E01E85552500BE0B1C /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		673EB7681E84DA6800C907B2 /* WatchGetPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchGetPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673EB76B1E84DA6800C907B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673EB76D1E84DA6800C907B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				673EB76B1E84DA6800C907B2 /* AppDelegate.swift */,
 				673EB76D1E84DA6800C907B2 /* ViewController.swift */,
 				673EB76F1E84DA6800C907B2 /* Main.storyboard */,
+				673236E01E85552500BE0B1C /* VideoViewController.swift */,
 				673EB7721E84DA6800C907B2 /* Assets.xcassets */,
 				673EB7741E84DA6800C907B2 /* LaunchScreen.storyboard */,
 				673EB7771E84DA6800C907B2 /* Info.plist */,
@@ -274,6 +277,7 @@
 				673EB7821E85118F00C907B2 /* Firebase.swift in Sources */,
 				673EB76C1E84DA6800C907B2 /* AppDelegate.swift in Sources */,
 				673236D71E85277D00BE0B1C /* ErrorAlert.swift in Sources */,
+				673236E11E85552500BE0B1C /* VideoViewController.swift in Sources */,
 				673236DC1E853C2A00BE0B1C /* AuthorizeViewController.swift in Sources */,
 				673EB7851E85194400C907B2 /* SignUpViewController.swift in Sources */,
 				673EB7891E851B3700C907B2 /* User.swift in Sources */,

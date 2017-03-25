@@ -8,5 +8,6 @@ target 'WatchGetPay' do
   # Pods for WatchGetPay
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/AdMob'
   pod 'MBProgressHUD'
 end
