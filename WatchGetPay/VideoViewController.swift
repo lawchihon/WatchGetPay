@@ -46,6 +46,8 @@ extension VideoViewController: GADRewardBasedVideoAdDelegate {
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd,
                             didFailToLoadWithError error: Error) {
         print("Reward based video ad failed to load: \(error.localizedDescription)")
+        rewardBasedVideo?.load(GADRequest(),
+                               withAdUnitID: "ca-app-pub-2991031448749727/3329478696")
     }
     
     func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
