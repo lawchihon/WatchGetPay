@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="1037.5999999999999" y="36.431784107946029"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="uLd-RV-L8h">
             <objects>
-                <viewController id="t20-xn-cRT" sceneMemberID="viewController">
+                <viewController id="t20-xn-cRT" customClass="LandingViewController" customModule="WatchGetPay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gu2-YZ-G0P"/>
                         <viewControllerLayoutGuide type="bottom" id="qB9-Sy-8wn"/>
@@ -175,7 +175,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onLoginButton:" destination="VHF-hJ-nwV" eventType="touchUpInside" id="G4U-Yd-IDt"/>
-                                    <segue destination="Ndc-ej-971" kind="presentation" id="0xI-EV-jbx"/>
+                                    <segue destination="Ndc-ej-971" kind="presentation" identifier="watchVideoSegue" id="0xI-EV-jbx"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-Pa-152">
@@ -204,16 +204,18 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auto Repeat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-38-uYu">
-                                <rect key="frame" x="24" y="330" width="327" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Repeat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-38-uYu">
+                                <rect key="frame" x="24" y="330" width="327" height="52"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ4-yT-nCB">
-                                <rect key="frame" x="132" y="413" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ4-yT-nCB">
+                                <rect key="frame" x="132" y="402" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="FKG-nF-6uH"/>
+                                    <constraint firstAttribute="height" constant="40" id="dF7-6l-alh"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -221,14 +223,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ZZ4-yT-nCB" firstAttribute="centerX" secondItem="fNb-Pa-152" secondAttribute="centerX" id="1Mm-sU-iq8"/>
+                            <constraint firstItem="AhS-38-uYu" firstAttribute="leading" secondItem="cbj-9b-nLU" secondAttribute="leading" constant="24" id="4Zj-N5-qJk"/>
+                            <constraint firstAttribute="trailing" secondItem="AhS-38-uYu" secondAttribute="trailing" constant="24" id="8up-nK-RU5"/>
+                            <constraint firstItem="AhS-38-uYu" firstAttribute="top" secondItem="AVz-1Z-BUo" secondAttribute="bottom" constant="70" id="Hic-0A-DJS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fNb-Pa-152" secondAttribute="trailing" constant="8" id="KCv-gE-ZIk"/>
                             <constraint firstItem="mCq-FV-c1g" firstAttribute="leading" secondItem="cbj-9b-nLU" secondAttribute="leadingMargin" constant="117" id="cZN-4E-gGV"/>
                             <constraint firstItem="fNb-Pa-152" firstAttribute="leading" secondItem="cbj-9b-nLU" secondAttribute="leadingMargin" constant="8" id="cce-Ps-DSR"/>
+                            <constraint firstItem="mCq-FV-c1g" firstAttribute="centerX" secondItem="fNb-Pa-152" secondAttribute="centerX" id="h7q-A1-h3O"/>
+                            <constraint firstItem="AhS-38-uYu" firstAttribute="centerX" secondItem="fNb-Pa-152" secondAttribute="centerX" id="j2B-KY-Vj2"/>
                             <constraint firstItem="fNb-Pa-152" firstAttribute="top" secondItem="Gu2-YZ-G0P" secondAttribute="bottom" constant="80" id="lrn-rr-58W"/>
+                            <constraint firstItem="mCq-FV-c1g" firstAttribute="top" secondItem="ZZ4-yT-nCB" secondAttribute="bottom" constant="90" id="oBp-dD-UTM"/>
+                            <constraint firstItem="ZZ4-yT-nCB" firstAttribute="top" secondItem="AhS-38-uYu" secondAttribute="bottom" constant="20" id="r8D-EA-IUE"/>
                             <constraint firstItem="qB9-Sy-8wn" firstAttribute="top" secondItem="mCq-FV-c1g" secondAttribute="bottom" constant="80" id="sZT-xy-a3x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mCq-FV-c1g" secondAttribute="trailing" constant="117" id="uYn-cf-gLo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="autoRepeatTextField" destination="ZZ4-yT-nCB" id="3CW-jN-D2G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxV-C4-tzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

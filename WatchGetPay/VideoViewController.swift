@@ -70,6 +70,7 @@ extension VideoViewController: GADRewardBasedVideoAdDelegate {
         else {
             self.dismiss(animated: true, completion: nil)
         }
+        autoRepeat -= 1
     }
     
     func rewardBasedVideoAdWillLeaveApplication(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
